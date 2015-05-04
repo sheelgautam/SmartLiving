@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_blue_grey_950"
+    tools:context="com.evssmart.sheel.smartliving.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/living"
+            android:id="@+id/textView2"
+            android:textSize="45sp"
+            android:typeface="monospace"
+            android:textColor="@android:color/background_light"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/reason"
+            android:id="@+id/textView3"
+            android:typeface="monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:layout_below="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/disconnect"
+            android:id="@+id/disconnect_button"
+            android:enabled="true"
+            android:background="@drawable/button_s"
+            android:typeface="monospace"
+            android:textSize="20sp"
+            android:textAppearance="@style/AppTheme"
+            android:textColor="@android:color/background_light"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="45dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:id="@+id/imageView2"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/globe"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</FrameLayout>
